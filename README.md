@@ -158,4 +158,4 @@ Add demo video / GIF
 
 Improve SEO for repo
 
-Add badges (build passing, license, stars…)
+Add badges (build passing, license, stars…)  
