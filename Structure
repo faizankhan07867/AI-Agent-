@@ -1,0 +1,6 @@
+AI Agent/
+│── app.py
+│── templates/
+│     └── index.html
+│── static/
+      └── style.css
