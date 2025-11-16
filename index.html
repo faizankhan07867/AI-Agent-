@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DocuMind – AI Blog Writing Agent</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>DocuMind – AI Blog Writing Agent</h1>
+
+        <form action="/generate" method="post">
+            <label>Blog Topic</label>
+            <input type="text" name="topic" required>
+
+            <label>Blog Subtitles (each on new line)</label>
+            <textarea name="subtitles" rows="6" required></textarea>
+
+            <button type="submit">Generate</button>
+        </form>
+
+        {% if result %}
+        <div class="output">
+            <h2>Generated Blog:</h2>
+            <div>{{ result|safe }}</div>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
